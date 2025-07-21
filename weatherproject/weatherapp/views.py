@@ -8,7 +8,7 @@ def home(request):
     city = request.POST.get('city', 'indore')
 
     # OpenWeatherMap API
-    WEATHER_API_KEY = '605e57733cbc61f5710a556a72c74efb'
+    WEATHER_API_KEY = 'your weather api key'
     weather_url = 'https://api.openweathermap.org/data/2.5/weather'
     weather_params = {
         'q': city,
@@ -17,8 +17,8 @@ def home(request):
     }
 
     # Google Custom Search API
-    GOOGLE_API_KEY = 'AIzaSyC46GvyWtTOBuanx83FULthwqRXIiJp98U'
-    SEARCH_ENGINE_ID = 'c0b7b5a3e7ebe47d8'
+    GOOGLE_API_KEY = 'your api key'
+    SEARCH_ENGINE_ID = 'your search engine id'
     search_query = f'{city} 1920x1080'
     fallback_image_url = 'https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg'
 
