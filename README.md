@@ -16,8 +16,8 @@ This is a Django-based weather application that shows real-time weather informat
 
 ## 🌐 Demo
 
-[image_alt] (https://github.com/Pavithra8S/weather/blob/main/weatherproject/weatherapp/static/Screenshot%202025-07-21%20221049.png)
-[image_alt] (https://github.com/Pavithra8S/weather/blob/main/weatherproject/weatherapp/static/Screenshot%202025-07-21%20221102.png)
+![image_alt](https://github.com/Pavithra8S/weather/blob/main/weatherproject/s1.png)
+![image_alt](https://github.com/Pavithra8S/weather/blob/main/weatherproject/s2.png)
 
 ---
 
