@@ -1,0 +1,133 @@
+:root {
+  --white: #ffffff;
+  --off-white: #e5e5e5;
+  --transp-white-1: rgba(255, 255, 255, 0.25);
+  --transp-white-2: rgba(255, 255, 255, 0.18);
+  --blue-1: #62b8f5;
+  --blue-2: #4475ef;
+  --shadow: rgba(3, 46, 87, 0.2);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+  padding: 1rem;
+  color: rgb(5, 41, 51);
+}
+
+.container {
+  width: 100%;
+  max-width: 700px;
+  background: var(--transp-white-2);
+  backdrop-filter: blur(10px);
+  padding: 2rem;
+  border-radius: 15px;
+  border: 2px solid var(--transp-white-2);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.heading {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+form {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 0.6rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background-color: var(--transp-white-1);
+  color: #000;
+}
+
+input[type="text"]::placeholder {
+  color: #333;
+}
+
+.btn {
+  padding: 0.6rem 1.2rem;
+  border: 2px solid var(--blue-2);
+  background-color: transparent;
+  color: var(--blue-2);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background-color: var(--blue-2);
+  color: #fff;
+}
+
+.weather {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.left,
+.right {
+  flex: 1 1 300px;
+  padding: 1rem;
+  border-radius: 10px;
+  background: var(--transp-white-2);
+  backdrop-filter: blur(10px);
+  text-align: center;
+}
+
+.temp {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.city {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.weather-icon {
+  height: 85px;
+  margin-bottom: 1rem;
+}
+
+.condition p {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 700px) {
+  form {
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .weather {
+    flex-direction: column;
+    align-items: center;
+  }
+}
