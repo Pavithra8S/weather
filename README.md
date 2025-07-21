@@ -16,8 +16,8 @@ This is a Django-based weather application that shows real-time weather informat
 
 ## 🌐 Demo
 
-[image_alt](https://github.com/Pavithra8S/weather/blob/main/weatherproject/weatherapp/static/Screenshot%202025-07-21%20221049.png)
-[image_alt](https://github.com/Pavithra8S/weather/blob/main/weatherproject/weatherapp/static/Screenshot%202025-07-21%20221102.png)
+[image_alt] (https://github.com/Pavithra8S/weather/blob/main/weatherproject/weatherapp/static/Screenshot%202025-07-21%20221049.png)
+[image_alt] (https://github.com/Pavithra8S/weather/blob/main/weatherproject/weatherapp/static/Screenshot%202025-07-21%20221102.png)
 
 ---
 
@@ -44,18 +44,23 @@ This is a Django-based weather application that shows real-time weather informat
 
 ## ⚙️ Getting Started
 
-### 1. Clone the Repository
+### 1.Clone the repository
 
 ```bash
 git clone https://github.com/yourusername/django-weather-app.git
 cd django-weather-app
+ ### 2.Set Up Virtual Environment (optional but recommended)
+python -m venv env
+source env/bin/activate  # On Windows use `env\Scripts\activate`
+### 3. Install Dependencies
+pip install -r requirements.txt
 
-### Configure API Keys
+### 4.Configure API Keys
 Open views.py and replace:
 WEATHER_API_KEY = 'your_openweather_api_key'
 GOOGLE_API_KEY = 'your_google_api_key'
 SEARCH_ENGINE_ID = 'your_search_engine_id'
 
-### Run the Project
+### 5.Run the Project
 python manage.py runserver
 
